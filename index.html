@@ -17,28 +17,24 @@
     <section class="pt-5">
         <div class="container">
             <h1 class="text-center mb-3 display-2 fw-bold" style="font-family: 'Rubik Vinyl', cursive;">Pokemons</h1>
-            <form class="w-25 mx-auto mb-5 js-form">
-                <select class="form-select js-select">
-                    <option selected disabled>
-                        Choose
+            <form class="w-75 mx-auto js-form d-flex justify-content-between mb-5">
+                <div class="w-25 input-group mb-0">
+                    <input type="text" class="form-control js-input" placeholder="Search film.." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn bg-danger" type="button" style="color: #fff;">Search</button>
+                  </div>
+                  <select class="w-25 form-select js-select">
+                    <option value="Category" selected disabled>
+                        Category
                     </option>
                     <option value="All">All</option>
-                    <!-- <option value="Grass">Grass</option>
-                    <option value="Fire">Fire</option>
-                    <option value="Bug">Bug</option>
-                    <option value="Water">Water</option>
-                    <option value="Flying">Flying</option>
-                    <option value="Poison">Poison</option>
-                    <option value="Normal">Normal</option>
-                    <option value="Electric">Electric</option>
-                    <option value="Ground">Ground</option>
-                    <option value="Fighting">Fighting</option>
-                    <option value="Psychic">Psychic</option>
-                    <option value="Rock">Rock</option>
-                    <option value="Ice">Ice</option>
-                    <option value="Ghost">Ghost</option>
-                    <option value="Dragon">Dragon</option> -->
-                </select>
+                  </select>
+    
+                  <select class="form-select w-25 js-select_2">
+                    <option selected disabled>Filter</option>
+                    <option value="0">All</option>
+                    <option value="a-z">A-Z</option>
+                    <option value="z-a">Z-A</option>
+                  </select>
             </form>
             <ul class="js-list d-flex flex-wrap justify-content-between"
                 style="margin: 0; padding: 0; list-style-type: none;">
