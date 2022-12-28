@@ -107,3 +107,27 @@ elSelect2.addEventListener('change', () => {
     render(pokemons, elList);
   }
 })
+
+// ----------DARKMODE===========
+
+const modeBtn = document.querySelector('.modebtn');
+let theme = false;
+
+modeBtn.addEventListener('click', function(){
+  theme = !theme;
+  const bg = theme ? 'dark' : 'light'
+  window.localStorage.setItem('theme',bg);
+  changeMode();
+})
+
+function changeMode(){
+  if(window.localStorage.getItem('theme')=='dark'){
+    document.body.classList.add('dark');
+    elItem.classList.add('dark')
+
+  }else{
+    document.body.classList.remove('dark');
+    elItem.classList.remove('dark')
+  }
+}
+changeMode();
